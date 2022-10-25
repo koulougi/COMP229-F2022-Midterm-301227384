@@ -8,9 +8,9 @@
       <!-- ------------------------ -->
       <!-- FIX THE ADD BUTTON BELOW -->
       <!-- ------------------------ -->
-      <a href="" class="btn btn-primary">
+      <a href="/products/add" class="btn btn-primary">
         <i class="fa fa-plus"></i> Add a product</a>
-      <br >
+      <br>
       <div class="table-responsive">
         <table class="table table-bordered table-striped table-hover">
           <thead>
@@ -35,20 +35,22 @@
                 <!-- ------------------------ -->
                 <!-- ADD the EDIT BUTTON HERE -->
                 <!-- ------------------------ -->
+                <a href="/products/details/<%= products[count]._id %>" class="btn btn-success btn-sm">
+                  <i class="fas fa-pencil-alt"></i>Edit
+                </a>
+
+              <td class="text-center">
+                <a href="/products/delete/<% products[count]._id %>" class="btn btn-warning btn-sm">
+                  <i class="fas fa-trash"></i> Delete</a>
+
               </td>
             </tr>
             <% } %>
           </tbody>
         </table>
       </div>
-  
-    <!-- ------------------------ -->
-    <!-- ADD the DELETE BUTTON HERE -->
-    <!-- ------------------------ -->
-    <a href="" class="btn btn-warning btn-sm">
-      <i class="fas fa-trash"></i> Delete</a>
   </main>
-  
+
 
       <div class="col-md-offset-1 col-md-10 text-center">
         <ul class="pagination pagination-lg pager" id="myPager"></ul>

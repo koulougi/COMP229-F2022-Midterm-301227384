@@ -6,7 +6,7 @@ let Product = mongoose.Schema(
     Productid: String,
     Productname: String,
     Description: String,
-    Price: Number,
+    Price: Number
   },
   {
     collection: "products",
