@@ -84,7 +84,7 @@ router.post("/details/:id", (req, res, next) => {
   let updatedProduct = product({
     "_id" : id,
     "Productid" : req.body.Productid,
-    "ProductName" : req.body.Productname,
+    "Productname" : req.body.Productname,
     "Description" : req.body.Description,
     "Price" : req.body.Price
   });
