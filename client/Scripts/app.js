@@ -117,3 +117,16 @@ $.fn.pageMe = function(opts){
     {pagerSelector:'#myPager',showPrevNext:true,hidePageNumbers:false,perPage:6}
     );
 })();
+
+let deleteButton = null;
+
+function deleteProductName() {
+    let deleteButton = prompt("Please enter product name you wish to delete");
+    if (deleteButton != null){
+        let link = document.location.origin+'/products/delete/'+deleteButton;
+
+        window.location.href = link;
+        console.log(deleteButton);
+
+    }
+}
