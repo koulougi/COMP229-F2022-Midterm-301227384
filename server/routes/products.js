@@ -1,3 +1,9 @@
+/*
+File name : COMP229-F2022-MidTerm-Start-009-301227384
+Author's name : Christopher Koulougliotis
+Student ID : 301227384
+Web App Name : COMP229-F2022-Midterm-301227384
+*/
 // modules required for routing
 let express = require("express");
 let router = express.Router();
@@ -100,7 +106,7 @@ router.get('/delete/:id', (req, res, next) => {
    *****************/
   let id = req.params.id;
 
-  product.deleteMany({Productname : id}, (err) => {
+  product.deleteMany({ Productname : id}, (err) => {
     if(err){
       console.log(err);
       res.end(err);
