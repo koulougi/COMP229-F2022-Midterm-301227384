@@ -44,7 +44,7 @@ router.post("/add", (req, res, next) => {
     "Productid" : req.body.Productid,
     "Productname" : req.body.Productname,
     "Description" : req.body.Description,
-    "Price" : req.body.Price
+    "Price" : req.body.price
   });
   product.create(newProduct, (err, Product) => {
     if(err){
@@ -86,7 +86,7 @@ router.post("/details/:id", (req, res, next) => {
     "Productid" : req.body.Productid,
     "Productname" : req.body.Productname,
     "Description" : req.body.Description,
-    "Price" : req.body.Price
+    "Price" : req.body.price
   });
   product.updateOne({_id: id}, updatedProduct, (err) =>  {
     if(err){
