@@ -44,7 +44,7 @@ router.post("/add", (req, res, next) => {
     "Productid" : req.body.Productid,
     "Productname" : req.body.Productname,
     "Description" : req.body.Description,
-    "Price" : req.body.price
+    "Price" : req.body.Price
   });
   product.create(newProduct, (err, Product) => {
     if(err){
